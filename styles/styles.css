@@ -4,6 +4,7 @@ body{
     padding: 0;
 }
 .eslogan{
+    max-width: 500px;
     font-family: 'Sacramento';
     color: white;
     line-height: 1.2;
@@ -15,6 +16,7 @@ body{
 }
 
 header {
+    font-family: "Ubuntu", serif;
     background: #e3f7f5;
     display: flex;
     justify-content: flex-start;
@@ -22,6 +24,7 @@ header {
     padding: 15px 50px;
     position: fixed;
     width: 100%;
+    height: 45px;
     top: 0;
     z-index: 1000;
 }
@@ -68,6 +71,7 @@ nav ul li a {
     height: 550px;
     margin: auto;
     overflow: hidden;
+    margin-bottom: 50px;
     
     
 }
@@ -103,4 +107,55 @@ img.displaySlide{
     to {opacity: 1}
 }
 
+.galeria {
+    display: flex;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    justify-content: center; /* Centra las imágenes horizontalmente */
+    gap: 20px; /* Espaciado entre imágenes */
+    padding: 20px;
+}
 
+.item {
+    font-family: "Ubuntu", serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px; /* Tamaño uniforme */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    background: white;
+    text-align: center;
+    padding-bottom: 10px; /* Espacio para el texto */
+}
+
+.item img {
+    width: 100%;
+    height: 350px;
+    border-radius: 10px 10px 0 0;
+}
+
+.item p {
+    margin: 10px 0 0 0;
+    font-weight: bold;
+    font-size: 14px;
+    
+}
+
+.item:hover {
+    transform: rotate(-5deg); /* Inclinación al pasar el mouse */
+}
+
+h2{
+    font-family: "Ubuntu", serif;
+    display: flex;
+    justify-content: center;
+    padding: 0%;
+    align-items: center;
+    margin-top: 60px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
