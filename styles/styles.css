@@ -5,7 +5,7 @@ body{
 }
 .eslogan{
     max-width: 500px;
-    font-family: 'Sacramento';
+    font-family: 'Dancing Script';
     color: white;
     line-height: 1.2;
     font-size: 80px;
@@ -158,4 +158,54 @@ h2{
 
 html {
     scroll-behavior: smooth;
+}
+
+.video{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    border-radius: 50px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #F8FDFC;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: #e3f7f5;
+    color: #333;
+    font-size: 14px;
+    font-family: "Ubuntu", serif;
+    
+}
+
+.footer-left {
+    display: flex;
+    align-items: center;
+}
+
+.footer-left img {
+    height: 70px;
+    margin-right: 10px;
+}
+
+.footer-right {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-right a {
+    text-decoration: none;
+    color: #333;
+}
+
+.footer-right a:hover {
+    text-decoration: underline;
 }
