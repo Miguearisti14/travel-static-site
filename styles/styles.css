@@ -19,6 +19,9 @@ header {
     height: 45px;
     top: 0;
     z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    min-height: 80px;
 }
 
 h2 {
@@ -34,7 +37,9 @@ html {
     scroll-behavior: smooth;
 }
 
-/* Estilo de la navegación */
+/* Estilos generales */
+header {}
+
 nav ul {
     list-style: none;
     display: flex;
@@ -53,6 +58,52 @@ nav ul li a {
     font-size: 18px;
     display: inline-block;
     line-height: 1;
+}
+
+/* Estilo del botón hamburguesa, inicialmente oculto */
+.nav-toggle {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+
+    /* Mostrar el botón hamburguesa */
+    .nav-toggle {
+        display: block;
+    }
+
+    /* Ocultar el menú de navegación inicialmente */
+    nav ul {
+        display: none;
+        /* Se oculta inicialmente */
+        flex-direction: column;
+        position: absolute;
+        /* Se posiciona de forma absoluta */
+        top: 100%;
+        /* Justo debajo del header */
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        margin: 0;
+        padding: 10px 0;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        z-index: 1000;
+    }
+
+    /* Cuando el menú tenga la clase "active", se mostrará */
+    nav ul.active {
+        display: flex;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+        text-align: center;
+    }
 }
 
 /* Estilo del logo */
