@@ -37,8 +37,7 @@ html {
     scroll-behavior: smooth;
 }
 
-/* Estilos generales */
-header {}
+
 
 nav ul {
     list-style: none;
@@ -138,14 +137,20 @@ nav ul li a {
 .slider {
     position: relative;
     width: 100%;
-    height: 550px;
-    margin: auto;
+    max-width: 100%;
+    height: 500px;
     overflow: hidden;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 50px;
 }
 
 .slider img {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
     display: none;
 }
 
@@ -155,16 +160,18 @@ img.displaySlide {
     animation-duration: 1.5s;
 }
 
+
 .slider button {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     font-size: 2rem;
     padding: 10px 15px;
-    background-color: hsla(0, 0%, 0%, 0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     color: white;
     border: none;
     cursor: pointer;
+    z-index: 10;
 }
 
 .prev {
@@ -380,3 +387,6 @@ button:hover {
     border-radius: 10px;
 
 }
+
+
+@media (max-width: 480px) {}
