@@ -1,16 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/styles.css"/>
+    <link rel="stylesheet" href="styles/styles.css" />
     <title>GoTravel</title>
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet"  href="https://fonts.googleapis.com/css?family=Sacramento">
+    <link rel="preconnect" href="https://fonts.gstatic.com"  crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sacramento">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet"></head>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
 <body>
+    <!-- Header con la barra de navegación -->
     <header>
         <div class="logo">
             <h1><span>GoTravel</span></h1>
@@ -19,15 +26,16 @@
 
         <nav>
             <ul>
-                <li><a href="#">Inicio</a></li>
+                <li><a href="index.html">Inicio</a></li>
                 <li><a href="#Destinos">Destinos</a></li>
-                <li><a href="#">Experiencias</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="#Experiencias">Experiencias</a></li>
+                <li><a href="formulario.html">Contacto</a></li>
             </ul>
         </nav>
 
     </header>
 
+    <!-- Rotador de Banners -->
     <div class="slider">
         <div class="slides">
             <img class="slide" src="assets\images\banner1.jpg" alt="Image #1">
@@ -41,11 +49,12 @@
         <button class="next" onclick="nextSlide()">&#10095</button>
     </div>
 
-    <p class="eslogan" >Viaja...<br>Descubre...<br>y Vive</p>
+    <p class="eslogan">Viaja...<br>Descubre...<br>y Vive</p>
 
 
-    <h2 id="Subtitulo" >Visita Múltiples Destinos</h2>
+    <h2 id="Destinos">Visita Múltiples Destinos</h2>
 
+    <!-- Galeria de Imágenes -->
     <div class="galeria">
 
         <div class="item">
@@ -81,16 +90,18 @@
             <p>Roma</p>
         </div>
     </div>
-    
-    <h2 id="Subtitulo" >Vive la Experiencia</h2>
 
+    <h2 id="Experiencias">Vive la Experiencia</h2>
+
+    <!-- Video Embebido -->
     <div class="video">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/l9WJ6PspaW4?si=rKI2x1e5_2p9nAoL" 
-        title="YouTube video player" frameborder="0"  allow="accelerometer; autoplay; clipboard-write;
-        encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
-        allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/l9WJ6PspaW4?si=rKI2x1e5_2p9nAoL"
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+        encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen></iframe>
     </div>
-    
+
+    <!-- Footer -->
     <footer>
         <div class="footer-left">
             <img src="assets\images\logo2.png" alt="GoTravel Logo">
@@ -101,7 +112,15 @@
             <a href="#">Contact</a>
         </div>
     </footer>
-    
+
+    <!-- Link a JS -->
     <script src="scripts/main.js"></script>
+
+    <!-- Botón Flotante -->
+    <div class="BotonFlotante">
+        <a href="https://www.canva.com/design/DAGefIFFRv8/49nGsAEYFhQE1WGXbM-7-w/view"><img
+                src="assets\images\logowpp.png" alt=""></a>
+    </div>
 </body>
+
 </html>
