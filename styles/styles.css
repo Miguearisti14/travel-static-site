@@ -7,6 +7,23 @@ body {
 
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+h2 {
+    font-family: "Ubuntu", serif;
+    display: flex;
+    justify-content: center;
+    padding: 0%;
+    align-items: center;
+    margin-top: 60px;
+}
+
+
+
+/*          HEADER          */
+
 header {
     font-family: "Ubuntu", serif;
     background: #e3f7f5;
@@ -24,20 +41,9 @@ header {
     min-height: 80px;
 }
 
-h2 {
-    font-family: "Ubuntu", serif;
-    display: flex;
-    justify-content: center;
-    padding: 0%;
-    align-items: center;
-    margin-top: 60px;
-}
-
-html {
-    scroll-behavior: smooth;
-}
 
 
+/*       NAVEGACIÓN         */
 
 nav ul {
     list-style: none;
@@ -59,7 +65,7 @@ nav ul li a {
     line-height: 1;
 }
 
-/* Estilo del botón hamburguesa, inicialmente oculto */
+
 .nav-toggle {
     display: none;
     font-size: 24px;
@@ -68,44 +74,10 @@ nav ul li a {
     cursor: pointer;
 }
 
-/* Media query para pantallas pequeñas */
-@media (max-width: 768px) {
 
-    /* Mostrar el botón hamburguesa */
-    .nav-toggle {
-        display: block;
-    }
 
-    /* Ocultar el menú de navegación inicialmente */
-    nav ul {
-        display: none;
-        /* Se oculta inicialmente */
-        flex-direction: column;
-        position: absolute;
-        /* Se posiciona de forma absoluta */
-        top: 100%;
-        /* Justo debajo del header */
-        left: 0;
-        width: 100%;
-        background-color: #fff;
-        margin: 0;
-        padding: 10px 0;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-        z-index: 1000;
-    }
+/*           LOGO           */
 
-    /* Cuando el menú tenga la clase "active", se mostrará */
-    nav ul.active {
-        display: flex;
-    }
-
-    nav ul li {
-        margin: 10px 0;
-        text-align: center;
-    }
-}
-
-/* Estilo del logo */
 .logo {
     display: flex;
     align-items: center;
@@ -119,33 +91,62 @@ nav ul li a {
     margin-left: 5px;
 }
 
-.eslogan {
-    max-width: 500px;
-    font-family: 'Dancing Script';
-    color: white;
-    line-height: 1.2;
-    font-size: 80px;
-    font-weight: bold;
-    position: relative;
-    z-index: 1;
-    margin: -350px 0px 0px 100px;
-}
 
+/*          SLIDER          */
 
-
-/* Banner Slider */
 .slider {
     position: relative;
     width: 100%;
-    max-width: 100%;
-    height: 500px;
+    height: 550px;
     overflow: hidden;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 50px;
 }
+
+
+.eslogan-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 15px 30px;
+    border-radius: 10px;
+    max-width: 60%;
+}
+
+
+.slides {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+
+.slide {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
+}
+
+
+.eslogan {
+    font-family: "Dancing Script";
+    position: absolute;
+    top: 16%;
+    left: 5%;
+
+    color: white;
+    font-size: 80px;
+    font-weight: bold;
+    text-align: center;
+
+
+    padding: 15px 30px;
+    border-radius: 10px;
+    max-width: 60%;
+}
+
 
 .slider img {
     width: 100%;
@@ -193,7 +194,9 @@ img.displaySlide {
 }
 
 
-/* Galería de Imágenes */
+
+/*     GALERÍA IMÁGENES     */
+
 .galeria {
     display: flex;
     margin-top: 20px;
@@ -232,11 +235,12 @@ img.displaySlide {
 
 .item:hover {
     transform: rotate(-5deg);
-    /* Inclinación al pasar el mouse */
 }
 
 
-/* Video Embebido */
+
+/*     VIDEO EMBEBIDO       */
+
 .video {
     display: flex;
     justify-content: center;
@@ -251,8 +255,8 @@ iframe {
 }
 
 
+/*          FOOTER          */
 
-/* Footer */
 footer {
     display: flex;
     justify-content: space-between;
@@ -289,7 +293,10 @@ footer {
     text-decoration: underline;
 }
 
-/* Botón Flotante */
+
+
+/*     BOTÓN FLOTANTE       */
+
 .BotonFlotante {
     position: fixed;
     bottom: 20px;
@@ -304,8 +311,12 @@ footer {
     height: 70px;
 }
 
-/* Formulario de Contacto */
+
+
+/* FORMULARIO DE CONTACTO   */
+
 .formulario {
+    top: 10%;
     flex: 1;
     padding-right: 20px;
     font-family: "Ubuntu", serif;
@@ -331,6 +342,7 @@ textarea {
 }
 
 textarea {
+    font-family: "Ubuntu", serif;
     height: 80px;
     resize: none;
 }
@@ -357,10 +369,13 @@ button:hover {
     gap: 20px;
     max-width: 80%;
     margin: auto;
-    margin-top: 50px;
+    margin-top: 5%;
     margin-bottom: 20px;
+    flex-wrap: wrap;
+    position: relative;
+    top: 30%;
+    left: 1%;
 }
-
 
 .container {
     display: flex;
@@ -371,6 +386,7 @@ button:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 400px;
     margin-top: 8%;
+    flex: 1;
 }
 
 .imagen {
@@ -378,15 +394,101 @@ button:hover {
     display: flex;
     justify-content: center;
     margin-top: 8%;
-    border-color: 8px;
 }
 
 .imagen img {
     max-width: 100%;
-    height: 400px;
+    height: auto;
     border-radius: 10px;
-
 }
 
 
-@media (max-width: 480px) {}
+/*      SECCIÓN SEDES       */
+
+.sedes-container {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.sedes-container h2 {
+    font-family: "Ubuntu", serif;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.sedes-info {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.sede {
+    font-family: "Ubuntu", serif;
+    max-width: 200px;
+}
+
+.sede h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.imagen-sede img {
+    max-width: 60%;
+    height: 50%;
+    border-radius: 8px;
+}
+
+
+/* --- RESPONSIVE --- */
+
+/* Para el formulario */
+@media screen and (max-width: 768px) {
+    .megaContenedor {
+        flex-direction: column;
+        text-align: center;
+        margin-top: 20%;
+    }
+
+    .container {
+        width: 90%;
+        margin-top: 5%;
+    }
+
+    .imagen {
+        margin-top: 5%;
+    }
+}
+
+/* Para la barra de navegación */
+@media (max-width: 768px) {
+
+    .nav-toggle {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        margin: 0;
+        padding: 10px 0;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        z-index: 1000;
+    }
+
+
+    nav ul.active {
+        display: flex;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+        text-align: center;
+    }
+}
