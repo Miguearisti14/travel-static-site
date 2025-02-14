@@ -46,21 +46,23 @@
         <div class="container">
             <div class="formulario">
                 <h1>Formulario de <br>Contacto</h1>
-                <form>
+                <form id="formulario">
                     <label for="nombre">Nombre</label>
-                    <input type="text" id="nombre" placeholder="Ingrese su nombre">
+                    <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre">
 
                     <label for="correo">Correo</label>
-                    <input type="email" id="correo" placeholder="Ingrese su correo">
+                    <input type="email" id="correo" name="correo" placeholder="Ingrese su correo">
 
                     <label for="asunto">Asunto</label>
-                    <input type="text" id="asunto" placeholder="Ingrese el asunto">
+                    <input type="text" id="asunto" name="asunto" placeholder="Ingrese el asunto">
 
                     <label for="mensaje">Mensaje</label>
-                    <textarea id="mensaje" placeholder="Escriba su mensaje"></textarea>
+                    <textarea id="mensaje" name="mensaje" placeholder="Escriba su mensaje"></textarea>
 
                     <button type="submit">Enviar Información</button>
                 </form>
+
+
             </div>
         </div>
         <div class="imagen">
@@ -104,14 +106,16 @@
         </div>
     </footer>
 
-    <!-- Link a JS -->
-    <script src="scripts/main.js"></script>
+
 
     <!-- Botón Flotante -->
     <div class="BotonFlotante">
         <a href="https://www.canva.com/design/DAGefIFFRv8/49nGsAEYFhQE1WGXbM-7-w/view"><img
                 src="assets\images\logowpp.png" alt=""></a>
     </div>
+
+    <!-- Link a JS -->
+    <script src="scripts/main.js"></script>
 </body>
 
 </html>

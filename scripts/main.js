@@ -69,3 +69,25 @@ navToggle.addEventListener('click', () => {
     navUl.classList.toggle('active');
 });
 
+
+// Formulario
+// Activar evento del boton "Enviar Información"
+var handleForm = (event) => {
+    event.preventDefault();
+
+    const form = event.target
+    const userField = form[0].value
+    const emailField = form[1].value
+    const asuntField = form[2].value
+    const messageField = form[3].value
+
+    localStorage.setItem("nombre", userField)
+    localStorage.setItem("correo", emailField)
+    localStorage.setItem("asunto", asuntField)
+    localStorage.setItem("mensaje", messageField)
+    // localStorage.clear()
+}
+
+var form = document.getElementById("formulario");
+
+form.addEventListener("submit", handleForm)
